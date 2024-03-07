@@ -1,4 +1,4 @@
-import * as hype from "./hypeUtility.js"
+
 
 
 const minorDiscount = 0.20;
@@ -32,10 +32,10 @@ compileButton.addEventListener("click",
         let userAge = elementUserAge.value; //evito il parseInt visto che i valori sono decisi da noi
         responseUserNameAndSurname.innerHTML = `${userName} ${userSurname}`;
         responseTicketType.innerHTML = (userAge == "minor" ? `Discounted Ticket (-${minorDiscount * 100}%)` : userAge == "over65" ? `Discounted Ticket (-${over65Discount * 100}%)` : "Standard Ticket");
-        responseCarriege.innerHTML = hype.getRndInteger(2, 20);
-        responseCPCode.innerHTML = hype.getRndInteger(10000, 99999);
-        let cost = (price * destination).toFixed(2);
-        responseCost.innerHTML = (userAge == "minor" ? `${cost - (cost * minorDiscount)}€` : userAge == "over65" ? `${cost - (cost * over65Discount)}€` : `${cost}€`);
+        responseCarriege.innerHTML = getRndInteger(2, 20);
+        responseCPCode.innerHTML = getRndInteger(10000, 99999);
+        let cost = (price * destination);
+        responseCost.innerHTML = (userAge == "minor" ? `${(cost - (cost * minorDiscount)).toFixed(2)}€` : userAge == "over65" ? `${(cost - (cost * over65Discount)).toFixed(2)}€` : `${cost}€`);
         trainAnimationIn();
     })
 
