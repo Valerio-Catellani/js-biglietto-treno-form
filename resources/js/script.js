@@ -41,10 +41,13 @@ compileButton.addEventListener("click",
 
 document.querySelector("#compile button:nth-child(2)").addEventListener("click",
     function () {
+        if (!(compileButton.classList.contains("disabled"))) {
+            trainAnimationOut(); //debugg evito che il treno si veda finchè il button è disabled
+        }
         elementUserName.value = elementUserSurname.value = elementDestination.value = "";
         invalidOption.selected = true;
         CheckButton();
-        trainAnimationOut();
+
     }
 )
 

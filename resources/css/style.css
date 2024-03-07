@@ -11,7 +11,9 @@
     background-color: var(--color-primary)
 }
 
-
+body {
+    font-family: "Madimi One", sans-serif;
+}
 
 #app {
     background-image: url(../img/station.jpg);
@@ -41,7 +43,6 @@ nav .active {
 nav .nav-item:hover {
     background-color: var(--color-primary);
     color: white !important;
-    transition: 0.5s;
 }
 
 nav .nav-item .nav-link:hover {
