@@ -18,8 +18,43 @@
 
 <body>
   <div id="app" class="overflow-x-hidden ">
-    <div class="container-lg w-lg-50 ">
-      <div class="style-ticket-container container-fluid my-5 rounded-5 p-4">
+    <header class="fixed-top w-100 bg-white shadow">
+      <div class="container-lg">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <div class="style-img-container">
+              <img class="img-fluid " src="resources/img/icon-train.png" alt="logo">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item rounded-2">
+                  <a class="nav-link  " aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item rounded-2">
+                  <a class="nav-link active  " href="#">Create your ticket</a>
+                </li>
+                <li class="nav-item rounded-2">
+                  <a class="nav-link " href="#">Service</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success style-navbar-search-button text-black "
+                  type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+    </header>
+    <div class="container-lg w-lg-50">
+      <div class="style-ticket-container container-fluid rounded-5 p-4 shadow-lg">
         <div class="row">
           <div class="col-6 ">
             <div class="mb-3 text-center">
@@ -42,7 +77,7 @@
           <option selected value="select">Select passenger age</option>
           <option value="minor">Minor</option>
           <option value="adult">Adult</option>
-          <option value="over65">over65</option>
+          <option value="over65">Over65</option>
         </select>
         <div id="compile" class="d-flex justify-content-center gap-5">
           <button type="button" class="btn style-background-color btn-lg text-white disabled">Generate your
@@ -53,29 +88,35 @@
     </div>
     <div id="ticket-cost" class=" container-fluid my-5">
       <div class="style-table-container h-100">
+        <div class="style-background-table d-flex flex-column justify-content-between">
+          <table class="table rounded text-start ">
+            <thead>
+              <tr>
+                <th scope="col" class="rounded-top-1 rounded-end-0">Passenger Name</th>
+                <th scope="col">Ticket Type</th>
+                <th scope="col">Carriage</th>
+                <th scope="col">CP Code</th>
+                <th scope="col" class="rounded-top-1 rounded-start-0">Cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr id="response">
+                <th scope="row" class="rounded-bottom-1 rounded-end-0">e</th>
+                <td class="small">e</td>
+                <td>e </td>
+                <td>e</td>
+                <td class="rounded-bottom-1 rounded-start-0">e</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="icon-container text-white fs-1 d-flex justify-content-center ">
+            <i class="fa-solid fa-print pointer-event mx-3"></i>
+            <i class="fa-solid fa-download mx-3"></i>
+            <i class="fa-solid fa-share mx-3"></i>
+            <i class="fa-solid fa-share-nodes mx-3"></i>
+          </div>
 
-        <table class="table rounded text-start ">
-          <thead>
-            <tr>
-              <th scope="col" class="rounded-top-1 rounded-end-0">Passenger Name</th>
-              <th scope="col">Ticket Type</th>
-              <th scope="col">Carriage</th>
-              <th scope="col">CP Code</th>
-              <th scope="col" class="rounded-top-1 rounded-start-0">Cost</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr id="response">
-              <th scope="row" class="rounded-bottom-1 rounded-end-0">e</th>
-              <td class="small">e</td>
-              <td>e </td>
-              <td>e</td>
-              <td class="rounded-bottom-1 rounded-start-0">e</td>
-            </tr>
-          </tbody>
-        </table>
-
-
+        </div>
       </div>
     </div>
     <script src="resources/js/script.js" type="module"></script>

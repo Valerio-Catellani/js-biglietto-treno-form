@@ -18,7 +18,38 @@
     background-size: cover;
 }
 
+/*navbar*/
+
+.style-navbar-search-button {
+    border-color: black;
+}
+
+.style-navbar-search-button:hover {
+    background-color: var(--color-primary);
+    color: white !important;
+}
+
+nav .style-img-container {
+    width: 7%;
+}
+
+nav .active {
+    color: var(--color-primary) !important;
+}
+
+
+nav .nav-item:hover {
+    background-color: var(--color-primary);
+    color: white !important;
+    transition: 0.5s;
+}
+
+nav .nav-item .nav-link:hover {
+    color: inherit !important;
+}
+
 /*Ticket-form*/
+
 
 label {
     color: white;
@@ -28,6 +59,7 @@ label {
 
 .style-ticket-container {
     max-width: 600px;
+    margin-top: 100px;
 }
 
 .style-ticket-container {
@@ -57,13 +89,21 @@ label {
 
 #ticket-cost .table {
     --bs-table-bg: transparent;
-    background-image: linear-gradient(to bottom, #e2e7eb, #c30d23);
-    height: 100%;
-    border-collapse: collapse;
-    border: black;
+    border: transparent;
 }
 
 .style-table-container {
     margin: 0 auto;
     padding-top: 75px;
+}
+
+.style-background-table {
+    background-image: linear-gradient(to bottom, #e2e7eb, #c30d23);
+    height: 80%;
+}
+
+.icon-container i:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+    color: rgb(190, 189, 188);
 }
