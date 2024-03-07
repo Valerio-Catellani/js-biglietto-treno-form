@@ -12,6 +12,12 @@
 }
 
 
+
+#app {
+    background-image: url(../img/station.jpg);
+    background-size: cover;
+}
+
 /*Ticket-form*/
 
 label {
@@ -22,10 +28,42 @@ label {
 
 .style-ticket-container {
     max-width: 600px;
+}
+
+.style-ticket-container {
     background-image: linear-gradient(to top, #f1efef, var(--color-primary));
 }
 
 #compile .btn:hover {
     background-color: var(--color-light-primary);
     transform: scale(1.2);
+}
+
+
+/*Ticker-response*/
+
+#ticket-cost {
+    background-image: url(../img/train.png);
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    width: 195%;
+    right: -100%;
+}
+
+.style-table-container {
+    max-width: 600px;
+}
+
+#ticket-cost .table {
+    --bs-table-bg: transparent;
+    background-image: linear-gradient(to bottom, #e2e7eb, #c30d23);
+    height: 100%;
+    border-collapse: collapse;
+    border: black;
+}
+
+.style-table-container {
+    margin: 0 auto;
+    padding-top: 75px;
 }
