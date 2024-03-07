@@ -1,0 +1,31 @@
+:root {
+    --color-primary: rgb(185, 20, 80);
+    --color-light-primary: rgb(183, 44, 92)
+}
+
+.style-text-color {
+    color: var(--color-primary)
+}
+
+.style-background-color {
+    background-color: var(--color-primary)
+}
+
+
+/*Ticket-form*/
+
+label {
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.style-ticket-container {
+    max-width: 600px;
+    background-image: linear-gradient(to top, #f1efef, var(--color-primary));
+}
+
+#compile .btn:hover {
+    background-color: var(--color-light-primary);
+    transform: scale(1.2);
+}
