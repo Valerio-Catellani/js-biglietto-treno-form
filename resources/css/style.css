@@ -18,6 +18,7 @@ body {
 #app {
     background-image: url(../img/station.jpg);
     background-size: cover;
+    height: 100vh;
 }
 
 /*navbar*/

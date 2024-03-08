@@ -61,7 +61,6 @@ elementDestination.addEventListener("input", CheckButton);
 elementUserAge.addEventListener("input", CheckButton);
 
 function CheckButton() {
-    console.log(elementUserAge.selected);
     if (elementUserName.value && elementUserSurname.value && elementDestination.value && (invalidOption.selected !== true)) {
         compileButton.classList.remove("disabled");
     } else {
